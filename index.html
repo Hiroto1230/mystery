@@ -31,31 +31,36 @@
 
     <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
 
-    <a-entity position="0 1.5 -3">
-      <!-- 背景の半透明パネル -->
+    <a-entity mindar-image-target="targetIndex: 0">
       <a-plane 
-        width="3" 
-        height="1" 
+        position="0 0 -0.1" 
+        width="1.5" 
+        height="0.5" 
         color="#000000" 
-        opacity="0.4" 
-        position="0 0 -0.01">
+        opacity="0.5">
       </a-plane>
     
-      <!-- テキスト -->
       <a-text 
-        value="🔓 PASS: 1234" 
-        color="#66ccff" 
-        width="2.5"
+        id="fancy-text"
+        value="🔒 PASS: 1234"
+        position="0 0 -0.09"
+        width="1.8"
         align="center"
-
+        color="#FFD700"
+        font="https://cdn.aframe.io/fonts/Exo2Bold.fnt"
         shader="msdf"
-        negate="false"
-        position="0 0 0"
-        side="double"
-        wrap-count="20"
-        baseline="center"
-        outlineColor="#000000"
-        outlineWidth="0.04">
+        baseline="center">
+        
+        <!-- ✨ ここにアニメーション入れる！ -->
+        <a-animation 
+          attribute="scale"
+          from="0.8 0.8 0.8"
+          to="1 1 1"
+          dur="1000"
+          direction="alternate"
+          repeat="indefinite">
+        </a-animation>
+    
       </a-text>
     </a-entity>
   </a-scene>
