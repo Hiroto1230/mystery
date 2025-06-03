@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>ARパスワード表示</title>
+  <title>謎B</title>
 
 　<script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
 　<script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
@@ -19,7 +19,7 @@
 <body>
   <a-scene 
       style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;" 
-      mindar-image="imageTargetSrc: ./target.mind; autoStart: true" 
+      mindar-image="imageTargetSrc: ./targets.mind; autoStart: true" 
       embedded 
       color-space="sRGB" 
       renderer="precision: mediump; antialias: true" 
@@ -42,17 +42,76 @@
       </a-plane>
     
       <a-text 
-        value="999999"
+        value="15"
         position="0 0 -0.09"
         width="3.0"
         align="center"
         color="#A0D8EF"
         font="https://cdn.aframe.io/fonts/mozillavr.fnt"
         baseline="center">
-        
-      
       </a-text>
     </a-entity>
+    
+    <a-entity mindar-image-target="targetIndex: 1">
+      <a-plane 
+        position="0 -0.08 -0.1" 
+        width="1.0" 
+        height="0.2" 
+        color="#000000" 
+        opacity="0.5">
+      </a-plane>
+    
+      <a-text 
+        value="Happy Birthday!!!"
+        position="0 0 -0.09"
+        width="3.0"
+        align="center"
+        color="#A0D8EF"
+        font="https://cdn.aframe.io/fonts/mozillavr.fnt"
+        baseline="center">
+      </a-text>
+    </a-entity>
+    
+    <a-entity mindar-image-target="targetIndex: 2">
+      <a-plane 
+        position="0 -0.08 -0.1" 
+        width="1.0" 
+        height="0.2" 
+        color="#000000" 
+        opacity="0.5">
+      </a-plane>
+    
+      <a-text 
+        value="62"
+        position="0 0 -0.09"
+        width="3.0"
+        align="center"
+        color="#A0D8EF"
+        font="https://cdn.aframe.io/fonts/mozillavr.fnt"
+        baseline="center">
+      </a-text>
+    </a-entity>
+
+    <a-entity mindar-image-target="targetIndex: 3">
+      <a-plane 
+        position="0 -0.08 -0.1" 
+        width="1.0" 
+        height="0.2" 
+        color="#000000" 
+        opacity="0.5">
+      </a-plane>
+    
+      <a-text 
+        value="72"
+        position="0 0 -0.09"
+        width="3.0"
+        align="center"
+        color="#A0D8EF"
+        font="https://cdn.aframe.io/fonts/mozillavr.fnt"
+        baseline="center">
+      </a-text>
+    </a-entity>
+    
   </a-scene>
 </body>
 </html>
